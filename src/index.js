@@ -12,7 +12,6 @@ export const h = (elementName, attributes, ...args) => {
 
         //wrap in d3-selection, create data-join update function, & return container element.
         if (typeof elementName === 'function' && attributes.select === true) {
-            console.log("NO")
             const [container, element, key, enter, update, exit] = elementName()
             const selection = select(container)
             container.update = (data) => {
@@ -28,7 +27,6 @@ export const h = (elementName, attributes, ...args) => {
             return container
         }
         if (typeof elementName === 'function' ) {
-            console.log("YES")
             return elementName({
                 attributes,
                 children

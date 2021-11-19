@@ -1,6 +1,6 @@
 {
   "name": "d3activated",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "d3 + JSX",
   "homepage": "https://github.com/scottorly/d3activated",
   "main": "dist/d3activated.min.js",
